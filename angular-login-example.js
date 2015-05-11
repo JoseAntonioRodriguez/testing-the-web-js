@@ -14,6 +14,7 @@ var dataset;
 
 beforeAll(function() {
   this.timeout(15000);
+  browser.driver.manage().window().maximize();
   server.start();
 });
 
