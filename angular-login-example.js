@@ -14,7 +14,7 @@ var dataset;
 
 beforeAll(function() {
   this.timeout(15000);
-  browser.driver.manage().window().maximize();
+  browser.driver.manage().window().setSize(1100, 650);
   server.start();
 });
 
@@ -56,30 +56,7 @@ feature('Login', function() {
   });
 });
 
-
-var LoginForm = function LoginForm() {
-  this.usernameInput = element(by.model('login.username'));
-  this.passwordInput = element(by.model('login.password'));
-  this.loginBtn = element(by.buttonText('Login'));
-  this.logoutBtn = element(by.buttonText('Logout'));
-
-  this.login = function login(username, password) {
-    this.usernameInput.clear();
-    this.usernameInput.sendKeys(username);
-    this.passwordInput.clear();
-    this.passwordInput.sendKeys(password);
-    this.loginBtn.click();
-  };
-
-  this.logout = function logout() {
-    var self = this;
-    self.logoutBtn.isDisplayed().then(function(isVisible) {
-      if (isVisible) {
-        self.logoutBtn.click();
-      }
-    });
-  };
-};
+var LoginForm = require('./login-form-page-object');
 
 feature("Access control based on user's role", function() {
   dataset = [

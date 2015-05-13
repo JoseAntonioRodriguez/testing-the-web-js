@@ -9,7 +9,7 @@
     "url": "git@github.com:JoseAntonioRodriguez/testing-the-web-js.git"
   },
   "contributors": [
-    "Jose Antonio Rodríguez <joseantonio.rodriguezfernandez@telefonica.com>"
+    "Toni Robres <twiindan@gmail.com>"
   ],
   "dependencies": {
     "chai": "2.3.0",
