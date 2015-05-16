@@ -1,0 +1,20 @@
+{
+  "name": "testing-the-web",
+  "version": "1.0.0",
+  "description": "Acceptance Tests for the talk 'Testing the Web'",
+  "author": "Jose Antonio Rodríguez <joseantonio.rodriguezfernandez@telefonica.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JoseAntonioRodriguez/testing-the-web-js.git"
+  },
+  "contributors": [
+    "Toni Robres <twiindan@gmail.com>"
+  ],
+  "dependencies": {
+    "chai": "2.3.0",
+    "chai-as-promised": "5.0.0",
+    "protractor": "telefonicaid/protractor#tartare",
+    "tartare": "0.8.0"
+  }
+}
